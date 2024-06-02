@@ -12,7 +12,7 @@ environments:
       type: 'terraform'
       terraformVersion: '1.5.7'
       repository: 'https://github.com/Constantine19/env0-environment-outputs'
-      path: 'aks'
+      path: 'randomize-name'
     needs:
       - vnet
   flux:
@@ -21,6 +21,6 @@ environments:
       type: 'terraform'
       terraformVersion: '1.5.7'
       repository: 'https://github.com/Constantine19/env0-environment-outputs'
-      path: 'flux'
+      path: 'randomize-name'
     needs:
       - aks
