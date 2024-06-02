@@ -5,14 +5,14 @@ environments:
       type: 'terraform'
       terraformVersion: '1.5.7'
       repository: 'https://github.com/Constantine19/env0-environment-outputs'
-      path: 'randomize-name'
+      path: 'network'
   aks:
     name: 'AKS Cluster'
     vcs:
       type: 'terraform'
       terraformVersion: '1.5.7'
       repository: 'https://github.com/Constantine19/env0-environment-outputs'
-      path: 'randomize-name'
+      path: 'aks'
     needs:
       - vnet
   flux:
@@ -21,6 +21,6 @@ environments:
       type: 'terraform'
       terraformVersion: '1.5.7'
       repository: 'https://github.com/Constantine19/env0-environment-outputs'
-      path: 'randomize-name'
+      path: 'flux'
     needs:
       - aks
